@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+.flex-container > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+.main {
+    text-align: left;
+    background:yellow;
+}
+.header {background: pink;}
+.footer {background: lightgreen;}
+.aside1 {background: powderblue;}
+.aside2 {background: violet;}
+@media all and (min-width: 768px) {
+    .aside { flex: 1 auto; }
+    .main    { flex: 3 0px; }
+    .aside1 { order: 1; }
+    .main    { order: 2; }
+    .aside2 { order: 3; }
+    .footer  { order: 4; }
+}
+</style>
+</head>
+<div class="flex-container">
+<header>
+<h1 style="color:pink;">GOLDY<sup>TECH</sup></h>
+</header>
+<img src="/images/doityourself.gif" alt="" style="width:119px;height:118px;border:0">
+<aside class="aside aside1">Welcome<br> to<br> goldytech its all<br>about<br>doityourself</aside>
+<article class="main">
+<img src="/images/Goldytech.gif" alt="welcome" style="width:119px;height:118px;border:0">
+<p style="color:red;">here is a forum on how to do phone tricks, rooting,frp bypassing,unlock tools,tweaking,know more about roms mtk,spd,qualcom and lot more.</p>
+</article>
+</div>
+<body>
+<p><a href="homepage.html"><b>click here for homepage</b></a></p>
+</body>
+</html>
+
